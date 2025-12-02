@@ -16,9 +16,16 @@ export default function App(){
   }
   const removeFromQueue =(id)=>{
     // Queue will be REMOVED
+    setQueue(queue.filter(item=>item.id!==id));
   }
-  const updateQueue =(id)=>{
+  const updateQueueStatus =(id,newStatus)=>{
     // Queue will be UPDATED
+    setQueue(queue.map((item)=>{
+      if(item.id==id){
+        return{...item,status:newStatus}
+      }
+      return item;
+    }));
   }
 
   
