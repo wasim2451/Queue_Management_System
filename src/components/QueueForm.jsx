@@ -17,7 +17,7 @@ export default function QueueForm({onAdd}){
         console.log("Added");
     }
     return (
-        <div>
+        <div className='form-div'>
             <h2 className="header queue-title">Add to Queue</h2>
             <form onSubmit={handleSubmit} className='form'>
                 <input type="text"

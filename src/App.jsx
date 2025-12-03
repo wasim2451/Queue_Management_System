@@ -38,7 +38,7 @@ export default function App(){
       {/* Two Components will be there  */}
       {/* Queue Form  + Display Component*/}
       <QueueForm onAdd={addToQueue}/>
-      <DisplayFunc/>
+      <DisplayFunc queue={queue} onUpdate={updateQueueStatus} onRemove={removeFromQueue}/>
     </main>
 
   </div>

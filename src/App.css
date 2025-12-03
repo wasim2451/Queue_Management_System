@@ -16,8 +16,8 @@ body{
 main{
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
+  align-items:self-end;
+  gap:200px;
 }
 header{
   text-align: center;
@@ -30,6 +30,10 @@ header{
 }
 .queue-title{
   text-align: center;
+}
+.form-div{
+  background-color: var(--surface);
+  border-radius: 10px;
 }
 .form{
   display: flex;
@@ -67,4 +71,15 @@ button{
 button:hover{
   cursor: pointer;
 }
+.text-normal{
+  color: var(--text);
+}
+.display-container{
+  padding: 40px;
+  background-color: var(--surface);
+  width: 600px;
+  height: fit-content;
+  border-radius: 10px;
+}
+
 
