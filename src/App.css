@@ -35,7 +35,7 @@ header{
 .form-div{
   background-color: var(--surface);
   border-radius: 10px;
-  height: 400px;
+  height: 300px;
   overflow-y: auto;
 }
 .form{
