@@ -16,8 +16,9 @@ body{
 main{
   display: flex;
   justify-content: center;
-  align-items:self-end;
-  gap:200px;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 20px;
 }
 header{
   text-align: center;
@@ -34,6 +35,8 @@ header{
 .form-div{
   background-color: var(--surface);
   border-radius: 10px;
+  height: 400px;
+  overflow-y: auto;
 }
 .form{
   display: flex;
@@ -80,6 +83,56 @@ button:hover{
   width: 600px;
   height: fit-content;
   border-radius: 10px;
+  line-height: 10px;
 }
-
-
+.textList{
+  font: 600;
+  color: var(--text);
+  font-size: 20px;
+  font-weight: bold;
+}
+.div-card{
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.serviceText{
+  color: var(--text-secondary);
+}
+.display-div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.serveBtn{
+  color: var(--text);
+  background-color: var(--success);
+  padding: 10px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right:20px;
+}
+.completeBtn{
+  background-color: var(--info);
+  color: var(--text);
+  padding: 10px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right:20px;
+}
+.card-btn-container{
+  display: flex;
+  gap: 10px;
+}
+.delete-btn{
+  background-color: var(--error);
+  padding: 10px;
+  color: var(--text);
+  font-size: 18px;
+  border-radius: 5px;
+  padding-left: 13px;
+  padding-right: 13px;
+}
